@@ -1,0 +1,19 @@
+/*********************** CSS for Main Header and Navigation **********************
+HEADER
+*/
+.main-header {
+  padding: 0 4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Because we want header to be sticky later */
+  height: 7rem;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/img/Dramatic Landscape.webp");
+}
