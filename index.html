@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="md:text-[31.25%] lg:text-[56.25%]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google Fonts (Literata) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Pixel Perfect Prints</title>
+  </head>
+  <body class="m-[0] p-[0] box-border">
+    <div class="flex min-h-[100vh] flex-col">
+      <header
+        class="main-header flex items-center justify-between gap-[2.4rem] bg-[#f5f5db] sticky top-0 z-50 w-full"
+      >
+        <a
+          href="#"
+          class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize"
+          ><ion-icon
+            name="camera"
+            class="text-[#8a775c] text-[2.6rem]"
+          ></ion-icon
+          >Pixel Perfect Prints</a
+        >
+
+        <nav
+          class="maim-nav hidden items-center justify-between md:gap-[5rem] lg:flex"
+        >
+          <nav class="flex gap-10 items-center">
+            <ul
+              class="flex gap-[2rem] text-[1.4rem] text-[#8a775c] font-medium"
+            >
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./order.html">Order a Print</a></li>
+              <li><a href="./booking.html">Book a Session</a></li>
+            </ul>
+          </nav>
+          <nav class="flex items-center text-[#8a775c]">
+            <ul class="flex gap-[1rem] items-center text-[1.4rem] font-medium">
+              <li>
+                <a
+                  href="./sign-in.html"
+                  class="flex items-center gap-[1.5rem] text-[#504230] px-[1.5rem] py-[1rem] rounded-lg hover:bg-[#bdb76b] transition-colors duration-500 ease-in-out"
+                  ><ion-icon name="log-in" class="text-[1.6rem]"></ion-icon>Sign
+                  In</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./sign-up.html"
+                  class="flex items-center gap-[1.5rem] bg-[#9c7f5c] text-[#f6f4ee] px-[1.5rem] py-[1rem] rounded-lg hover:bg-[#af9674] transition-colors duration-500 ease-in-out"
+                  ><ion-icon
+                    name="person-add"
+                    class="text-[#f6f4ee] text-[1.6rem]"
+                  ></ion-icon
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+            <ul class="hidden">
+              <li><a href="#">Profile logo</a></li>
+            </ul>
+          </nav>
+        </nav>
+        <button
+          class="btn-mobile-nav p-[1rem] border border-[#d8d8b2] rounded-md cursor-pointer lg:hidden"
+        >
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon
+            class="icon-mobile-nav hidden"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </header>
+      <!-- MAIN CONTENT -->
+      <main class="main-content flex flex-col flex-1" id="top">
+        <section
+          class="hero bg-cover bg-center bg-no-repeat bg-[url(/img/Dramatic Landscape.webp)] h-[65rem] flex flex-col items-center justify-center text-center px-4 mb-[12rem]"
+        >
+          <div
+            class="hero-content text-white flex flex-col gap-[1rem] mt-[25rem]"
+          >
+            <header>
+              <h1
+                class="font-bold capitalize text-[3.6rem] md:text-[4.8rem] lg:text-[6.8rem]"
+              >
+                Pixel Perfect Prints
+              </h1>
+            </header>
+            <p
+              class="text-[1.6rem] max-w-[70rem] mx-auto leading-[1.4] md:text-[2rem]"
+            >
+              Transforming your memories into timeless art. High-quality
+              enlargements and professional photography.
+            </p>
+            <div class="flex items-center justify-center mt-[2rem]">
+              <a
+                href="#"
+                class="flex items-center gap-[2rem] text-[1.4rem] text-[#504230] bg-[#bdb76b] rounded-lg px-[3rem] py-[1rem] cursor-pointer hover:bg-[#a6a266] transition-colors duration-300 ease-in-out capitalize font-medium"
+              >
+                Explore the Gallery
+                <ion-icon name="arrow-forward" class="text-[1.6rem]"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION SERVICES -->
+        <section class="mb-[10rem]">
+          <div class="container mx-auto md:px-[2.4rem]">
+            <div
+              class="flex flex-col items-center gap-[1rem] text-center mb-[5rem] m:mx-[3rem]"
+            >
+              <header>
+                <h2
+                  class="text-[#504230] text-[3rem] font-bold tracking-tight md:text-[4.8rem]"
+                >
+                  Our Services
+                </h2>
+              </header>
+              <p
+                class="text-[1.6rem] text-[#8a775c] leading-normal mx-[3rem] md:text-[2rem]"
+              >
+                From stunning prints to professional photoshoots, we offer
+                everything you need to capture and preserve your most precious
+                moments.
+              </p>
+            </div>
+            <div
+              class="grid mx-[3rem] sm:grid-cols-2 md: lg:grid-cols-3 gap-[4rem]"
+            >
+              <div
+                class="flex flex-col gap-[2rem] bg-[#f7f7e3] py-[2rem] px-[2rem] rounded-lg border border-[#eeeec3] shadow-sm hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="flex flex-col gap-[0.5rem]">
+                  <header>
+                    <h3
+                      class="flex items-center gap-[1rem] text-[#504230] capitalize text-[2.4rem] font-semibold"
+                    >
+                      <ion-icon name="snow"></ion-icon>Photo Enlargement
+                    </h3>
+                  </header>
+                  <p class="text-[#8a775c] text-[1.4rem] leading-[1.4]">
+                    Bring your favorite photos to life with our premium quality
+                    enlargements. Perfect for your home or as a gift.
+                  </p>
+                </div>
+                <p class="text-[#504230] leading-[1.5]">
+                  Choose from a variety of sizes and professional-grade paper to
+                  create a stunning visual piece.
+                </p>
+                <div class="flex">
+                  <a
+                    href="#"
+                    class="flex items-center gap-[1rem] p-2 text-[1.4rem] text-[#8a775c] hover:underline"
+                    >Order a Print
+                    <ion-icon
+                      name="arrow-forward"
+                      class="text-[1.6rem]"
+                    ></ion-icon
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-[2rem] bg-[#f7f7e3] py-[2rem] px-[2rem] rounded-lg border border-[#eeeec3] shadow-sm hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="flex flex-col gap-[0.5rem]">
+                  <header>
+                    <h3
+                      class="flex items-center gap-[1rem] text-[#504230] capitalize text-[2.4rem] font-semibold"
+                    >
+                      <ion-icon name="cube"></ion-icon>Custom Framing
+                    </h3>
+                  </header>
+                  <p class="text-[#8a775c] text-[1.4rem] leading-[1.4]">
+                    Complete your artwork with our selection of high-quality,
+                    custom-made frames.
+                  </p>
+                </div>
+                <p class="text-[#504230] leading-[1.5]">
+                  From classic wood to modern metal, find the perfect frame to
+                  match your style and decor.
+                </p>
+                <div class="flex">
+                  <a
+                    href="#"
+                    class="flex items-center gap-[1rem] p-2 text-[1.4rem] text-[#8a775c] hover:underline"
+                    >Choose a Frame
+                    <ion-icon
+                      name="arrow-forward"
+                      class="text-[1.6rem]"
+                    ></ion-icon
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-[2rem] bg-[#f7f7e3] py-[2rem] px-[2rem] rounded-lg border border-[#eeeec3] shadow-sm hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="flex flex-col gap-[0.5rem]">
+                  <header>
+                    <h3
+                      class="flex items-center gap-[1rem] text-[#504230] capitalize text-[2.4rem] font-semibold"
+                    >
+                      <ion-icon name="camera"></ion-icon>Event Photography
+                    </h3>
+                  </header>
+                  <p class="text-[#8a775c] text-[1.4rem] leading-[1.4]">
+                    Book a professional photographer for your special event.
+                    Weddings, birthdays, and more.
+                  </p>
+                </div>
+                <p class="text-[#504230] leading-[1.5]">
+                  We capture the moments that matter, so you can relax and enjoy
+                  your day. Let's tell your story.
+                </p>
+                <div class="flex">
+                  <a
+                    href="#"
+                    class="flex items-center gap-[1rem] p-2 text-[1.4rem] text-[#8a775c] hover:underline"
+                    >Book a Session
+                    <ion-icon
+                      name="arrow-forward"
+                      class="text-[1.6rem]"
+                    ></ion-icon
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION FROM PORTFOLIO -->
+        <section class="bg-[#ededd4] py-[12rem]">
+          <div
+            class="flex flex-col items-center gap-[1rem] text-center mb-[5rem]"
+          >
+            <header>
+              <h2
+                class="text-[#504230] text-[3rem] font-bold tracking-tight md:text-[4.8rem]"
+              >
+                From the Portfolio
+              </h2>
+            </header>
+            <p
+              class="text-[1.6rem] text-[#8a775c] leading-normal md:text-[2rem]"
+            >
+              A glimpse into the stories we've had the honor of capturing.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 sm:mx-[2rem] lg:grid-cols-4 lg:mx-[10rem] gap-4 md:gap-6 mt-12 mx-[2.4rem]"
+          >
+            <div class="h-[44.25rem] overflow-hidden rounded-xl">
+              <img
+                src="./img/gallery/gallery-1.webp"
+                alt="A close-up black and white portrait of an elderly person with expressive wrinkles."
+                loading="lazy"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            <div class="h-[44.25rem] overflow-hidden rounded-xl">
+              <img
+                src="./img/gallery/gallery-2.webp"
+                alt="A newly married couple laughing during their wedding reception."
+                loading="lazy"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            <div class="h-[44.25rem] overflow-hidden rounded-xl">
+              <img
+                src="./img/gallery/gallery-3.webp"
+                alt="A vibrant city street at night with neon lights and motion blur."
+                loading="lazy"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            <div class="h-[44.25rem] overflow-hidden rounded-xl">
+              <img
+                src="./img/gallery/gallery-4.webp"
+                alt="A minimalist architectural shot of a modern building with strong lines."
+                loading="lazy"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </div>
+          </div>
+          <div class="flex justify-center mt-[4.8rem]">
+            <a
+              href="./gallery.html"
+              class="flex items-center gap-[2rem] capitalize text-[inherit] text-[1.4rem] bg-[#f5f5dc] py-6 px-12 rounded-xl border border-[#ddddb5] hover:bg-[#bdb76b]"
+              >view full gallery
+              <ion-icon name="arrow-forward" class="text-[1.6rem]"></ion-icon>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="border-t border-[#ddddb5] bg-[#ededd4]">
+        <div
+          class="flex flex-col gap-[2rem] text-center mx-[1rem] items-center justify-between py-12 md:mx-38 md:flex-row"
+        >
+          <a
+            href="#top"
+            class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize"
+            ><ion-icon
+              name="camera"
+              class="text-[#8a775c] text-[2.6rem]"
+            ></ion-icon
+            >Pixel Perfect Prints</a
+          >
+          <p class="text-[1.4rem] text-[#8a775c]">
+            &copy; 2025 Pixel Perfect Prints. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
