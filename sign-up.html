@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google Fonts (Literata) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Pixel Perfect Prints</title>
+  </head>
+  <body class="m-[0] p-[0] box-border relative overflow-x-hidden">
+    <div class="flex flex-col min-h-[100vh]">
+      <header
+        class="main-header group/nav flex items-center justify-between gap-[2.4rem] bg-[#f5f5db] sticky top-0 z-50 w-full"
+      >
+        <a
+          href="./index.html"
+          class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize"
+          ><ion-icon
+            name="camera"
+            class="text-[#8a775c] text-[2.6rem]"
+          ></ion-icon
+          >Pixel Perfect Prints</a
+        >
+
+        <!-- Making the mobile nav work -->
+        <nav
+          class="maim-nav flex flex-col items-center pt-[10rem] absolute top-0 right-0 w-full gap-[5rem] translate-x-full h-dvh px-[10rem] transition-all duration-500 ease-in bg-[#f5f5db] opacity-0 pointer-events-none invisible backdrop-blur-sm group-[.nav-open]/nav:opacity-100 group-[.nav-open]/nav:pointer-events-auto group-[.nav-open]/nav:visible group-[.nav-open]/nav:translate-x-0 lg:visible lg:pointer-events-auto lg:opacity-100 lg:pt-[0] lg:p-0 lg:h-auto lg:translate-x-0 lg:w-auto lg:gap-[5rem] lg:flex lg:flex-row lg:items-center lg:justify-between lg:relative"
+        >
+          <a
+            href="./index.html"
+            class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize lg:hidden"
+            ><ion-icon
+              name="camera"
+              class="text-[#8a775c] text-[2.6rem]"
+            ></ion-icon
+            >Pixel Perfect Prints</a
+          >
+          <nav class="flex gap-10 items-center">
+            <ul
+              class="flex flex-col text-center gap-[3rem] text-[1.8rem] text-[#8a775c] font-medium lg:flex-row lg:gap-[2rem] lg:text-[1.4rem]"
+            >
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./order.html">Order a Print</a></li>
+              <li><a href="./booking.html">Book a Session</a></li>
+            </ul>
+          </nav>
+          <nav class="flex items-center text-[#8a775c]">
+            <ul
+              class="flex flex-col gap-[2rem] items-center text-[1.8rem] font-medium lg:flex-row lg:text-[1.4rem] lg:gap-[1rem]"
+            >
+              <li>
+                <a
+                  href="./sign-in.html"
+                  class="flex items-center gap-[1.5rem] text-[#504230] px-[1.5rem] py-[1rem] rounded-lg hover:bg-[#bdb76b] transition-colors duration-500 ease-in-out"
+                  ><ion-icon name="log-in" class="text-[1.6rem]"></ion-icon>Sign
+                  In</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./sign-up.html"
+                  class="flex items-center gap-[1.5rem] bg-[#9c7f5c] text-[#f6f4ee] px-[1.5rem] py-[1rem] rounded-lg hover:bg-[#af9674] transition-colors duration-500 ease-in-out"
+                  ><ion-icon
+                    name="person-add"
+                    class="text-[#f6f4ee] text-[1.6rem]"
+                  ></ion-icon
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+            <ul class="hidden">
+              <li><a href="#">Profile logo</a></li>
+            </ul>
+          </nav>
+        </nav>
+
+        <!-- Mobile button (visible in 1024px) -->
+        <button
+          class="btn-mobile-nav p-[1rem] border border-[#d8d8b2] rounded-md cursor-pointer lg:hidden"
+        >
+          <ion-icon
+            class="icon-mobile-nav group-[.nav-open]/nav:hidden"
+            name="menu-outline"
+          ></ion-icon>
+          <ion-icon
+            class="icon-mobile-nav hidden group-[.nav-open]/nav:block group-[.nav-open]/nav:border group-[.nav-open]/nav:rounded-md group-[.nav-open]/nav:p-[1rem] group-[.nav-open]/nav:border-[#a68b64]"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </header>
+      <!-- MAIN CONTENT -->
+      <main
+        class="main-content flex flex-col flex-1 justify-center items-center w-full h-full"
+        id="top"
+      >
+        <!-- SIGNIN FORM -->
+        <section class="flex items-center justify-center w-full h-full">
+          <div
+            class="container flex flex-col items-center justify-center w-1/3 h-full rounded-lg bg-[#f7f7e3] shadow-xl border border-[#ddddb5]"
+          >
+            <div class="flex flex-col p-[2.4rem] text-center">
+              <h1 class="capitalize text-[#504230] text-[3rem] font-bold">
+                Create an Account
+              </h1>
+              <p class="text-[#8a775c] text-[1.4rem] mt-3">
+                Join our community of photography lovers.
+              </p>
+            </div>
+            <div class="p-[2.4rem] pt-0 w-full">
+              <form action="" class="space-y-6 w-full">
+                <div class="space-y-2">
+                  <label
+                    for="full-name"
+                    class="capitalize text-[#504230] font-medium"
+                    >Full name</label
+                  >
+                  <input
+                    type="text"
+                    class="flex text-[1.4rem] border border-[#ddddb5] bg-[#f5f5dc] rounded-lg p-[1rem] w-full mt-[1rem] placeholder:text[#8a775c]"
+                    placeholder="John Doe"
+                    id="full-name"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    for="eamil"
+                    class="capitalize text-[#504230] font-medium"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="flex text-[1.4rem] border border-[#ddddb5] bg-[#f5f5dc] rounded-lg p-[1rem] w-full mt-[1rem] placeholder:text[#8a775c]"
+                    placeholder="you@example.com"
+                    id="eamil"
+                  />
+                </div>
+                <div class="space-y-2 mt-[2.4rem]">
+                  <div class="flex justify-between items-center">
+                    <label
+                      for="password"
+                      class="capitalize text-[#504230] font-medium"
+                      >password</label
+                    >
+                  </div>
+                  <input
+                    type="password"
+                    class="flex text-[1.4rem] border border-[#ddddb5] bg-[#f5f5dc] rounded-lg p-[1rem] w-full mt-[1rem] placeholder:text[#8a775c]"
+                    placeholder="********"
+                    id="password"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="flex items-center justify-center gap-[1rem] text-white capitalize bg-[#a68b64] px[1rem] py-[1.5rem] rounded-md mt-[2.4rem] w-full"
+                >
+                  <ion-icon
+                    name="person-add"
+                    class="text-[#f6f4ee] text-[1.6rem]"
+                  ></ion-icon>
+                  Sign up
+                </button>
+              </form>
+              <div class="mt-[2.4rem]">
+                <div
+                  class="flex justify-center items-center mt-[2.4rem] text-[#8a775c]"
+                >
+                  <p>Already have an account?</p>
+                  <a
+                    href="./sign-in.html"
+                    class="font-semibold hover:text-[#8a775c]/60 transition-colors duration-300 ease-out"
+                  >
+                    Sign in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="border-t border-[#ddddb5] bg-[#ededd4]">
+        <div
+          class="flex flex-col gap-[2rem] text-center mx-[1rem] items-center justify-between py-12 md:mx-38 md:flex-row"
+        >
+          <a
+            href="#top"
+            class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize"
+            ><ion-icon
+              name="camera"
+              class="text-[#8a775c] text-[2.6rem]"
+            ></ion-icon
+            >Pixel Perfect Prints</a
+          >
+          <p class="text-[1.4rem] text-[#8a775c]">
+            &copy; 2025 Pixel Perfect Prints. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

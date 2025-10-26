@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google Fonts (Literata) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Pixel Perfect Prints</title>
+  </head>
+  <body class="m-[0] p-[0] box-border relative overflow-x-hidden">
+    <div class="flex flex-col min-h-[100vh]">
+      <header
+        class="main-header group/nav flex items-center justify-between gap-[2.4rem] bg-[#f5f5db] sticky top-0 z-50 w-full"
+      >
+        <a
+          href="./index.html"
+          class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize"
+          ><ion-icon
+            name="camera"
+            class="text-[#8a775c] text-[2.6rem]"
+          ></ion-icon
+          >Pixel Perfect Prints</a
+        >
+
+        <!-- Making the mobile nav work -->
+        <nav
+          class="maim-nav flex flex-col items-center pt-[10rem] absolute top-0 right-0 w-full gap-[5rem] translate-x-full h-dvh px-[10rem] transition-all duration-500 ease-in bg-[#f5f5db] opacity-0 pointer-events-none invisible backdrop-blur-sm group-[.nav-open]/nav:opacity-100 group-[.nav-open]/nav:pointer-events-auto group-[.nav-open]/nav:visible group-[.nav-open]/nav:translate-x-0 lg:visible lg:pointer-events-auto lg:opacity-100 lg:pt-[0] lg:p-0 lg:h-auto lg:translate-x-0 lg:w-auto lg:gap-[5rem] lg:flex lg:flex-row lg:items-center lg:justify-between lg:relative"
+        >
+          <a
+            href="./index.html"
+            class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize lg:hidden"
+            ><ion-icon
+              name="camera"
+              class="text-[#8a775c] text-[2.6rem]"
+            ></ion-icon
+            >Pixel Perfect Prints</a
+          >
+          <nav class="flex gap-10 items-center">
+            <ul
+              class="flex flex-col text-center gap-[3rem] text-[1.8rem] text-[#8a775c] font-medium lg:flex-row lg:gap-[2rem] lg:text-[1.4rem]"
+            >
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./order.html">Order a Print</a></li>
+              <li><a href="./booking.html">Book a Session</a></li>
+            </ul>
+          </nav>
+          <nav class="flex items-center text-[#8a775c]">
+            <ul
+              class="flex flex-col gap-[2rem] items-center text-[1.8rem] font-medium lg:flex-row lg:text-[1.4rem] lg:gap-[1rem]"
+            >
+              <li>
+                <a
+                  href="./sign-in.html"
+                  class="flex items-center gap-[1.5rem] text-[#504230] px-[1.5rem] py-[1rem] rounded-lg hover:bg-[#bdb76b] transition-colors duration-500 ease-in-out"
+                  ><ion-icon name="log-in" class="text-[1.6rem]"></ion-icon>Sign
+                  In</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./sign-up.html"
+                  class="flex items-center gap-[1.5rem] bg-[#9c7f5c] text-[#f6f4ee] px-[1.5rem] py-[1rem] rounded-lg hover:bg-[#af9674] transition-colors duration-500 ease-in-out"
+                  ><ion-icon
+                    name="person-add"
+                    class="text-[#f6f4ee] text-[1.6rem]"
+                  ></ion-icon
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+            <ul class="hidden">
+              <li><a href="#">Profile logo</a></li>
+            </ul>
+          </nav>
+        </nav>
+        <!-- Mobile button (visible in 1024px) -->
+        <button
+          class="btn-mobile-nav p-[1rem] border border-[#d8d8b2] rounded-md cursor-pointer lg:hidden"
+        >
+          <ion-icon
+            class="icon-mobile-nav group-[.nav-open]/nav:hidden"
+            name="menu-outline"
+          ></ion-icon>
+          <ion-icon
+            class="icon-mobile-nav hidden group-[.nav-open]/nav:block group-[.nav-open]/nav:border group-[.nav-open]/nav:rounded-md group-[.nav-open]/nav:p-[1rem] group-[.nav-open]/nav:border-[#a68b64]"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </header>
+      <!-- MAIN CONTENT -->
+      <main class="main-content flex flex-col flex-1" id="top">
+        <!-- SECTION ORDER PRINT -->
+        <section class="pt-[4.8rem]">
+          <div
+            class="flex flex-col items-center gap-[1rem] text-center mb-[5rem]"
+          >
+            <header>
+              <h2 class="text-[#504230] text-[4.8rem] font-bold tracking-tight">
+                Create Your Print
+              </h2>
+            </header>
+            <p class="text-[2rem] text-[#8a775c] leading-normal w-1/2">
+              Follow these simple steps to turn your digital photos into
+              stunning physical art.
+            </p>
+          </div>
+          <div class="container">
+            <!-- form -->
+            <form
+              action=""
+              class="bg-[#f7f7e3] rounded-lg shadow-xl border border-[#ddddb5] mb-[5rem]"
+            >
+              <div class="flex flex-col space-y-1 p-[2.4rem]">
+                <h3
+                  class="text-[2.2rem] text-[#504230] capitalize font-semibold"
+                >
+                  Your Order Details
+                </h3>
+                <p class="text-[1.4rem] text-[#8a775c]">
+                  Upload an image and select your preferences.
+                </p>
+              </div>
+
+              <div class="p-[2.4rem] pt-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                  <div>
+                    <label for="" class="text-[#504230]">1. Upload Image</label>
+                    <div
+                      class="flex justify-center mt-5 rounded-lg border-2 border-dashed border-gray-300 px-[2.4rem] py-[4rem]"
+                    >
+                      <div class="text-center">
+                        <p>
+                          <ion-icon
+                            name="image"
+                            class="lucide lucide-image mx-auto text-[5rem] text-gray-400"
+                          ></ion-icon>
+                        </p>
+                        <div class="mt-6 flex text-sm leading-6 text-gray-600">
+                          <label
+                            for="file-upload"
+                            class="relative cursor-pointer rounded-lg font-semibold text-[#9c7f5c] text-2xl focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:text-[#9c7f5c]/80"
+                            ><span>Upload a file</span>
+                            <input
+                              type="file"
+                              name=""
+                              id="file-upload"
+                              class="flex h-10 w-full rounded-md border border-input bg-background px-5 py-4 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm sr-only"
+                            />
+                          </label>
+                          <p class="pl-1 text-2xl">or drag and drop</p>
+                        </div>
+                        <p class="text-xl leading-5 text-gray-500 mt-[0.5rem]">
+                          PNG, JPG, GIF up to 10MB
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="space-y-6 pt-2">
+                    <div>
+                      <label
+                        for=""
+                        class="capitalize text-[#504230] font-medium"
+                        >2. choose size</label
+                      >
+
+                      <select
+                        class="w-full rounded-lg border border-[#ddddb5] bg-[#f5f5dc] px-[1rem] py-[1rem] text-[1.4rem] mt-[1rem]"
+                      >
+                        <option value="">Select a print size</option>
+                        <option value="8x10">8 x 10 inches (+₦25,000)</option>
+                        <option value="11x14">11 x 14 inches (+₦40,000)</option>
+                        <option value="16x20">16 x 20 inches (+₦60,000)</option>
+                        <option value="20x30">
+                          20 x 30 inches (+₦100,000)
+                        </option>
+                      </select>
+                    </div>
+                    <div class="space-y-6 pt-2">
+                      <label
+                        for=""
+                        class="capitalize text-[#504230] font-medium"
+                        >3. select frame</label
+                      >
+                      <select
+                        class="w-full rounded-lg border border-[#ddddb5] bg-[#f5f5dc] px-[1rem] py-[1rem] text-[1.4rem] mt-[1rem]"
+                      >
+                        <option value="">Select frame type</option>
+                        <option value="no-frame">No Frame (+₦0)</option>
+                        <option value="black-wood">
+                          Black Wood (+₦50,000)
+                        </option>
+                        <option value="white-wood">
+                          White Wood (+₦50,000)
+                        </option>
+                        <option value="natural-oak">
+                          Natural Oak (+₦65,000)
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-2 mt-[4rem]">
+                  <label
+                    for="address"
+                    class="capitalize text-[#504230] font-medium"
+                    >4. shipping address</label
+                  >
+                  <textarea
+                    name=""
+                    id="address"
+                    class="w-full border border-[#ddddb5] bg-[#f5f5dc] rounded-lg min-h-[10rem] px-[1rem] py-[1rem] text-[1.4rem] mt-[1rem]"
+                    placeholder="Enter your full shipping address..."
+                  ></textarea>
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center p-[2.4rem] bg-[#f5f5dc]/50"
+              >
+                <div>
+                  <p
+                    class="text-[1.8rem] font-semibold capitalize text-[#504230]"
+                  >
+                    total price:
+                  </p>
+                  <p
+                    class="text-[3.6rem] text-[#a68b64] font-bold text-primary"
+                  >
+                    ₦<!-- -->0
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="flex items-center gap-[1rem] text-white capitalize bg-[#a68b64] px-[2rem] py-[1rem] rounded-lg text-[1.6rem] cursor-pointer hover:bg-[#af9674] transition-colors duration-300 ease-in-out"
+                >
+                  place order <ion-icon name="cart"></ion-icon>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="border-t border-[#ddddb5] bg-[#ededd4]">
+        <div
+          class="flex flex-col gap-[2rem] text-center mx-[1rem] items-center justify-between py-12 md:mx-38 md:flex-row"
+        >
+          <a
+            href="#top"
+            class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize"
+            ><ion-icon
+              name="camera"
+              class="text-[#8a775c] text-[2.6rem]"
+            ></ion-icon
+            >Pixel Perfect Prints</a
+          >
+          <p class="text-[1.4rem] text-[#8a775c]">
+            &copy; 2025 Pixel Perfect Prints. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
