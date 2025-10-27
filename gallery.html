@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth overflow-x-hidden">
+<html
+  lang="en"
+  class="scroll-smooth overflow-x-hidden text-[56.25%] md:text-[43.75%] xl:text-[62.5%]"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,11 +37,11 @@
   <body class="m-[0] p-[0] box-border relative overflow-x-hidden">
     <div class="flex flex-col min-h-[100vh]">
       <header
-        class="main-header group/nav flex items-center justify-between gap-[2.4rem] bg-[#f5f5db] sticky top-0 z-50 w-full"
+        class="main-header px-[1rem] lg:px-[4rem] group/nav flex items-center justify-between gap-[2.4rem] bg-[#f5f5db] sticky top-0 z-50 w-full"
       >
         <a
           href="./index.html"
-          class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize"
+          class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[1.8rem] lg:text-[2rem] capitalize"
           ><ion-icon
             name="camera"
             class="text-[#8a775c] text-[2.6rem]"
@@ -48,11 +51,11 @@
 
         <!-- Making the mobile nav work -->
         <nav
-          class="maim-nav flex flex-col items-center pt-[10rem] absolute top-0 right-0 w-full gap-[5rem] translate-x-full h-dvh px-[10rem] transition-all duration-500 ease-in bg-[#f5f5db] opacity-0 pointer-events-none invisible backdrop-blur-sm group-[.nav-open]/nav:opacity-100 group-[.nav-open]/nav:pointer-events-auto group-[.nav-open]/nav:visible group-[.nav-open]/nav:translate-x-0 lg:visible lg:pointer-events-auto lg:opacity-100 lg:pt-[0] lg:p-0 lg:h-auto lg:translate-x-0 lg:w-auto lg:gap-[5rem] lg:flex lg:flex-row lg:items-center lg:justify-between lg:relative"
+          class="maim-nav flex flex-col items-center pt-[10rem] absolute top-0 right-0 w-full gap-[5rem] translate-x-full h-dvh px-[2rem] transition-all duration-500 ease-in bg-[#f5f5db] opacity-0 pointer-events-none invisible backdrop-blur-sm group-[.nav-open]/nav:opacity-100 group-[.nav-open]/nav:pointer-events-auto group-[.nav-open]/nav:visible group-[.nav-open]/nav:translate-x-0 lg:visible lg:pointer-events-auto lg:opacity-100 lg:pt-[0] lg:p-0 lg:h-auto lg:translate-x-0 lg:w-auto lg:gap-[5rem] lg:flex lg:flex-row lg:items-center lg:justify-between lg:relative"
         >
           <a
             href="./index.html"
-            class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[2rem] capitalize lg:hidden"
+            class="flex items-center gap-3 text-[#504230] tracking-wide font-bold text-[1.6rem] capitalize lg:hidden"
             ><ion-icon
               name="camera"
               class="text-[#8a775c] text-[2.6rem]"
@@ -114,22 +117,28 @@
       <!-- MAIN CONTENT -->
       <main class="main-content flex flex-col flex-1" id="top">
         <!-- SECTION FULL GALLERY -->
-        <section class="pt-[4.8rem] px-[2.4rem]">
+        <section class="pt-[4.8rem] lg:px-[2.4rem]">
           <div
             class="flex flex-col items-center gap-[1rem] text-center mb-[5rem]"
           >
             <header>
-              <h2 class="text-[#504230] text-[4.8rem] font-bold tracking-tight">
+              <h2
+                class="text-[#504230] text-[3rem] md:text-[4.8rem] font-bold tracking-tight"
+              >
                 Our Gallery
               </h2>
             </header>
-            <p class="text-[2rem] text-[#8a775c] leading-normal">
+            <p
+              class="text-[1.6rem] text-[#8a775c] px-[1.5rem] leading-normal md:text-[2rem]"
+            >
               Explore a curated collection of our favorite moments, captured
               with passion and precision.
             </p>
           </div>
 
-          <div class="grid grid-cols-4 gap-[3rem] mx-[10rem] mb-[5rem]">
+          <div
+            class="grid grid-cols-1 gap-[1.5rem] mb-[5rem] mx-[1.5rem] lg:mx-[10rem] md:mx-[5rem] md:gap-[3rem] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
             <div class="relative group h-[44.25rem] overflow-hidden rounded-xl">
               <img
                 src="./img/gallery/gallery-1.webp"
